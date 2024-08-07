@@ -1,0 +1,13 @@
+#compdef start-service.sh
+
+local -a subcommands
+subcommands=(
+    'db:Start database service with visualization (influxdb, grafana)'
+    'server:Start server (write data to influxdb)'
+    'api:Start api (expose data from influxdb)'
+    'stop:Stop all project services'
+    '-h:Show help'
+    '--help:Show help'
+         )
+
+_describe -t commands 'start-service.sh subcommands' subcommands
